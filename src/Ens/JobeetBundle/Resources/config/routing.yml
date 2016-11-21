@@ -1,0 +1,3 @@
+ens_jobeet_homepage:
+    path:     /
+    defaults: { _controller: EnsJobeetBundle:Default:index }
