@@ -11,6 +11,10 @@ Ens\JobeetBundle\Entity\Category:
       type: string
       length: 255
       unique: true
-
-
-
+  oneToMany:
+    jobs:
+      targetEntity: Job
+      mappedBy: category
+    category_affiliates:
+      targetEntity: CategoryAffiliate
+      mappedBy: category
