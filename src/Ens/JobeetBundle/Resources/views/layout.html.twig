@@ -15,7 +15,6 @@
     <link rel="shortcut icon" href="{{ asset('bundles/ensjobeet/images/favicon.ico') }}" />
   </head>
   <body>
-  Eder  
     <div id="container">
       <div id="header">
         <div class="content">
@@ -44,7 +43,12 @@
           </div>
         </div>
       </div>
-      
+      <div id="content">
+        <div class="content">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
  
       <div id="footer">
         <div class="content">
