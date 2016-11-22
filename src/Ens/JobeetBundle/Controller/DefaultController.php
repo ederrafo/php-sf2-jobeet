@@ -26,6 +26,7 @@ class DefaultController extends Controller
             $error = $session->get(SecurityContext::AUTHENTICATION_ERROR);
             $session->remove(SecurityContext::AUTHENTICATION_ERROR);
         }
+        // exit("<strong>In </strong>".__FILE__." <strong> in function </strong> ".__FUNCTION__." <strong>on line :</strong> ".__LINE__."");
  
         return $this->render('EnsJobeetBundle:Default:login.html.twig', array(
             // last username entered by the user
